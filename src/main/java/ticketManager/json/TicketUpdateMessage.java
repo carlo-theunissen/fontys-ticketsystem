@@ -1,10 +1,10 @@
 package ticketManager.json;
 
 public class TicketUpdateMessage {
-    public int ticketNumber;
+    public String ticketNumber;
     public int count;
 
-    public int getTicketNumber() {
+    public String getTicketNumber() {
         return ticketNumber;
     }
 
@@ -12,7 +12,7 @@ public class TicketUpdateMessage {
         return count;
     }
 
-    public void setTicketNumber(int ticketNumber) {
+    public void setTicketNumber(String ticketNumber) {
         this.ticketNumber = ticketNumber;
     }
 

@@ -1,7 +1,7 @@
 package ticketManager.webserver;
 
-import model.WebSocketSessionModel;
-import ticketManager.authentication.SimpleAuthentication;
+import ticketManager.model.WebSocketSessionModel;
+import ticketManager.authentication.websocket.SimpleAuthenticationGuard;
 import ticketManager.communication.FromClientCommunication;
 import ticketManager.communication.IMessageProcessor;
 import ticketManager.logic.CheckUnitBroadcaster;
@@ -27,7 +27,7 @@ public class EventServerSocket {
 
     public EventServerSocket() {
         sessionModels = new HashMap<String, WebSocketSessionModel>();
-        SimpleAuthentication auth = EventServer.getAuthentication();
+        SimpleAuthenticationGuard auth = EventServer.getWebSocketAuthentication();
         auth.sendValidMessageTo(new FromClientCommunication(new TicketIncreaseProvider( EventServer.getMutationManager(), EventServer.getRepository() ), new CheckUnitBroadcaster( auth )));
         setMessageProcessor(auth);
     }

@@ -1,6 +1,6 @@
-package ticketManager.authentication;
+package ticketManager.authentication.websocket;
 
-import model.WebSocketSessionModel;
+import ticketManager.model.WebSocketSessionModel;
 import ticketManager.communication.IMessageProcessor;
 import ticketManager.logic.IWebSocketSessionStorage;
 
@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
-public class SimpleAuthentication implements IMessageProcessor, IWebSocketSessionStorage, Observer {
+public class SimpleAuthenticationGuard implements IMessageProcessor, IWebSocketSessionStorage, Observer {
 
     private IMessageProcessor processor;
     private static final String PASSWORD = "password";
     private final ArrayList<WebSocketSessionModel> validSessions;
 
-    public SimpleAuthentication() {
+    public SimpleAuthenticationGuard() {
         validSessions = new ArrayList<WebSocketSessionModel>();
     }
 
@@ -39,6 +39,7 @@ public class SimpleAuthentication implements IMessageProcessor, IWebSocketSessio
     }
 
     public WebSocketSessionModel[] getUnits() {
-        return (WebSocketSessionModel[]) validSessions.toArray();
+        WebSocketSessionModel[] result = new WebSocketSessionModel[validSessions.size()];
+        return  validSessions.toArray(result);
     }
 }

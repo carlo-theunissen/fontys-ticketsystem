@@ -5,7 +5,7 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
 import org.glassfish.jersey.servlet.ServletContainer;
-import ticketManager.authentication.SimpleAuthentication;
+import ticketManager.authentication.websocket.SimpleAuthenticationGuard;
 import ticketManager.databaseAccessLayer.DatabaseTicketContext;
 import ticketManager.logic.MutationManager;
 import ticketManager.logic.TicketRepository;
@@ -21,11 +21,22 @@ import javax.websocket.server.ServerContainer;
  *
  * @author Nico Kuijpers, copied from github, adapted by Marcel Koonen
  */
+
+/**
+ var test = function() {
+ var ws = new WebSocket("ws://localhost:8080/ws/");
+ ws.onmessage = function (message) {
+ console.log(message.data);
+ };
+ setTimeout(function(){ ws.send("password");}, 500);
+ setTimeout(function(){ ws.send("181480200001");}, 1000);
+ };
+ */
 public class EventServer {
 
     private static MutationManager mutationManager = new MutationManager();
     private static TicketRepository repository = new TicketRepository(new DatabaseTicketContext());
-    private static SimpleAuthentication authentication = new SimpleAuthentication();
+    private static SimpleAuthenticationGuard authentication = new SimpleAuthenticationGuard();
 
     public static MutationManager getMutationManager() {
         return mutationManager;
@@ -35,7 +46,7 @@ public class EventServer {
         return repository;
     }
 
-    public static SimpleAuthentication getAuthentication() {
+    public static SimpleAuthenticationGuard getWebSocketAuthentication() {
         return authentication;
     }
 
@@ -56,7 +67,7 @@ public class EventServer {
         jerseyServlet.setInitOrder(0);
         // Tells the Jersey Servlet which REST service/class to load.
         jerseyServlet.setInitParameter("jersey.config.server.provider.classnames",
-                SimpleApiService.class.getCanonicalName());
+                TicketsApiServices.class.getCanonicalName());
 
         try {
             // Initialize javax.websocket layer

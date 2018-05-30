@@ -1,7 +1,7 @@
 package ticketManager.communication;
 
 import model.TicketMutationModel;
-import model.WebSocketSessionModel;
+import ticketManager.model.WebSocketSessionModel;
 import ticketManager.logic.CheckUnitBroadcaster;
 import ticketManager.logic.ITicketIncrease;
 
@@ -14,15 +14,11 @@ public class FromClientCommunication implements IMessageProcessor {
         this.broadcaster = broadcaster;
     }
 
-    public void onMessage(String string, WebSocketSessionModel session) {
-        try {
-            int ticketNumber = Integer.parseInt(string);
-            handleNewTicket(ticketNumber);
-        } catch (Exception ignored){}
-
+    public void onMessage(String ticketNumber, WebSocketSessionModel session) {
+        handleTicketUpdate(ticketNumber);
     }
-    private void handleNewTicket(int ticketNumber){
+    private void handleTicketUpdate(String ticketNumber){
         TicketMutationModel mutation = this.increase.getAndIncrease(ticketNumber);
-        this.broadcaster.sendUpdate(mutation);
+        this.broadcaster.send(mutation);
     }
 }

@@ -2,7 +2,7 @@ package ticketManager.logic;
 
 import model.TicketModel;
 
-public class TicketCollectionProvider {
+public class TicketCollectionProvider implements ITicketCollection {
     private final TicketRepository repository;
 
     public TicketCollectionProvider(TicketRepository repository) {
@@ -10,9 +10,9 @@ public class TicketCollectionProvider {
     }
 
     public TicketModel[] getValidTickets(int afterId){
-        return this.repository.getAllValidAfterId(0);
+        return this.repository.getAllValidAfterId(afterId);
     }
     public TicketModel[] getStartDump(){
-        return getValidTickets(0);
+        return this.repository.getAllAfterId(0);
     }
 }

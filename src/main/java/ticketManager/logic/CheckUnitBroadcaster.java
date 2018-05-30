@@ -2,8 +2,8 @@ package ticketManager.logic;
 
 import com.google.gson.Gson;
 import model.TicketMutationModel;
-import model.WebSocketSessionModel;
-import ticketManager.json.TicketUpdateMessage;
+import ticketManager.model.TicketExternalCommunicationModel;
+import ticketManager.model.WebSocketSessionModel;
 
 import java.io.IOException;
 
@@ -14,12 +14,9 @@ public class CheckUnitBroadcaster  {
         this.sessionStorage = unitStorage;
     }
 
-    public void sendUpdate(TicketMutationModel ticket) {
+    public void send(TicketMutationModel ticket) {
         Gson gson = new Gson();
-        TicketUpdateMessage message  = new TicketUpdateMessage();
-        message.setCount(ticket.getTicket().getAmountChecked());
-        message.setTicketNumber(ticket.getTicket().getTicketNumber());
-        String text = gson.toJson(message);
+        String text = gson.toJson(new TicketExternalCommunicationModel(ticket.getTicket()));
 
         for (WebSocketSessionModel model : sessionStorage.getUnits()){
             try {
@@ -28,9 +25,5 @@ public class CheckUnitBroadcaster  {
 
             }
         }
-    }
-
-    public void sendNew(TicketMutationModel ticket) {
-
     }
 }

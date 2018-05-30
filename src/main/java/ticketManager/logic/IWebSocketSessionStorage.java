@@ -1,6 +1,6 @@
 package ticketManager.logic;
 
-import model.WebSocketSessionModel;
+import ticketManager.model.WebSocketSessionModel;
 
 public interface IWebSocketSessionStorage {
     WebSocketSessionModel[] getUnits();

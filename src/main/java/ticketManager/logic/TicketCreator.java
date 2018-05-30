@@ -6,11 +6,11 @@ import ticketManager.databaseAccessLayer.ITicketContext;
 
 public class TicketCreator implements ITicketGenerator {
     private final MutationManager mutationManager;
-    private final ITicketContext ticketContext;
+    private final TicketRepository repository;
 
-    public TicketCreator(MutationManager mutationManager, ITicketContext context){
+    public TicketCreator(MutationManager mutationManager, TicketRepository repository){
         this.mutationManager = mutationManager;
-        this.ticketContext = context;
+        this.repository = repository;
     }
 
     /**
@@ -19,7 +19,7 @@ public class TicketCreator implements ITicketGenerator {
      */
     public TicketMutationModel newTicket() {
         TicketModel ticket = TicketModel.CreateNowTicketModel();
-        ticketContext.postTicket(ticket);
+        ticket = repository.newTicket(ticket);
         return mutationManager.createNewTicketMutation(ticket);
     }
 }

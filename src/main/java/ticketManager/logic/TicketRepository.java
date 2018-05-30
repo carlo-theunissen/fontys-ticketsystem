@@ -10,7 +10,7 @@ public class TicketRepository {
         this.context = context;
     }
 
-    public TicketModel increaseAmountAndGetById(int id){
+    public TicketModel increaseAmountAndGetById(String id){
         return context.increaseAmountAndGetById(id);
     }
     public TicketModel[] getAllAfterId(int id) {
@@ -18,5 +18,9 @@ public class TicketRepository {
     }
     public TicketModel[] getAllValidAfterId(int id){
         return context.getAllValidAfterId(id);
+    }
+
+    public TicketModel newTicket(TicketModel ticket) {
+        return context.createTicket(ticket);
     }
 }

@@ -1,4 +1,4 @@
-package model;
+package ticketManager.model;
 
 import javax.websocket.Session;
 import java.util.Observable;

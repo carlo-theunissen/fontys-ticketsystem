@@ -1,5 +1,6 @@
 package model;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -11,9 +12,14 @@ public class TicketModel {
     public int getId() {
         return id;
     }
-    public int getTicketNumber(){
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd");
-        return Integer.parseInt( formatter.format(date) + String.valueOf(id));
+    public String getTicketNumber(){
+        //y year
+        //D day of year
+        //H hour in day
+        //m minute in hour
+        //s second in minute
+        SimpleDateFormat formatter = new SimpleDateFormat("yyDDDHHmmss");
+        return  formatter.format(date) + String.valueOf(id);
     }
     public void setId(int id) {
         this.id = id;

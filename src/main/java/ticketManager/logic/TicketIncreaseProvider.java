@@ -2,7 +2,6 @@ package ticketManager.logic;
 
 import model.TicketModel;
 import model.TicketMutationModel;
-import ticketManager.databaseAccessLayer.ITicketContext;
 
 public class TicketIncreaseProvider implements ITicketIncrease {
     private final MutationManager mutationManager;
@@ -13,7 +12,7 @@ public class TicketIncreaseProvider implements ITicketIncrease {
         this.ticketRepository = context;
     }
 
-    public TicketMutationModel getAndIncrease(int id) {
+    public TicketMutationModel getAndIncrease(String id) {
         TicketModel model = ticketRepository.increaseAmountAndGetById(id);
         return mutationManager.createUpdateTicketMutation(model);
     }
