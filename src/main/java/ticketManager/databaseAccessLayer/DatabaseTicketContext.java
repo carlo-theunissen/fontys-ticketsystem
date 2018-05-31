@@ -89,33 +89,23 @@ public class DatabaseTicketContext implements ITicketContext {
         return null;
     }
 
-    public TicketModel createTicket(TicketModel model) {
-        try{
-            Connection conn = dataSource.getConnection();
+    public TicketModel createTicket(TicketModel model) throws SQLException {
 
-            String query="INSERT INTO `ticket` (`id`, `ticketNumber`, `count`, `created`) VALUES (NULL, 0, '0', ?);";
-            //String query="Insert INTO Table_A(name, age) ('abc','123' )";//Doesn't escape
-            PreparedStatement prest;
-            prest = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-            // prest.setString(1,model.getTicketNumber());
-            prest.setTimestamp(1, new Timestamp(model.getDate().getTime()));
-            prest.executeUpdate();
-            ResultSet rs = prest.getGeneratedKeys();
-            rs.next();
-            model.setId( rs.getInt(1) );
-            prest.close();
+        Connection conn = dataSource.getConnection();
 
-            String updateQuery="UPDATE `ticket` SET ticketNumber = ? WHERE id = ?";
-            PreparedStatement updatePrest = conn.prepareStatement(updateQuery);
-            updatePrest.setString(1, model.getTicketNumber());
-            updatePrest.setInt(2, model.getId());
-            updatePrest.execute();
-            updatePrest.close();
-            conn.close();
-
-        }catch (SQLException ignored){
-            ignored.printStackTrace();
-        }
+        String query="INSERT INTO `ticket` (`id`, `ticketNumber`,`randomId`, `count`, `created`) VALUES (NULL, ?, ?, '0', ?);";
+        //String query="Insert INTO Table_A(name, age) ('abc','123' )";//Doesn't escape
+        PreparedStatement prest;
+        prest = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+        // prest.setString(1,model.getTicketNumber());
+        prest.setString(1, model.getTicketNumber());
+        prest.setInt(2, model.getRandomId());
+        prest.setTimestamp(3, new Timestamp(model.getDate().getTime()));
+        prest.executeUpdate();
+        ResultSet rs = prest.getGeneratedKeys();
+        rs.next();
+        model.setId( rs.getInt(1) );
+        prest.close();
         return model;
     }
 }

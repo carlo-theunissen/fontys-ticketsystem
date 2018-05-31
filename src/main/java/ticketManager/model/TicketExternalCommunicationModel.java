@@ -4,20 +4,22 @@ import model.TicketModel;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class TicketExternalCommunicationModel {
-    public final String date;
+    public final Date date;
     public final int id;
+    public final int randomId;
     public final String ticketNumber;
     public final int amount;
 
 
     public TicketExternalCommunicationModel(TicketModel ticket) {
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm a z");
-        date =  df.format(ticket.getDate());
+        date =  ticket.getDate();
         id = ticket.getId();
         ticketNumber = ticket.getTicketNumber();
         amount = ticket.getAmountChecked();
+        randomId = ticket.getRandomId();
     }
 
 }

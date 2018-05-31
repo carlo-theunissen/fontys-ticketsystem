@@ -1,5 +1,6 @@
 package model;
 
+import java.math.BigInteger;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,6 +9,7 @@ public class TicketModel {
     private int id;
     private int amountChecked;
     private Date date;
+    private int randomId;
 
     public int getId() {
         return id;
@@ -18,8 +20,9 @@ public class TicketModel {
         //H hour in day
         //m minute in hour
         //s second in minute
+
         SimpleDateFormat formatter = new SimpleDateFormat("yyDDDHHmmss");
-        return  formatter.format(date) + String.valueOf(id);
+        return new BigInteger(formatter.format(date) + String.valueOf(randomId)).multiply(new BigInteger( String.valueOf(randomId).substring(0, 1))).toString();
     }
     public void setId(int id) {
         this.id = id;
@@ -45,5 +48,13 @@ public class TicketModel {
         TicketModel ticket = new TicketModel();
         ticket.setDate(new Date());
         return ticket;
+    }
+
+    public int getRandomId() {
+        return randomId;
+    }
+
+    public void setRandomId(int randomId) {
+        this.randomId = randomId;
     }
 }

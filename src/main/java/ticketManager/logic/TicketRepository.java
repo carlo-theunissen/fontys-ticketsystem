@@ -2,6 +2,9 @@ package ticketManager.logic;
 
 import model.TicketModel;
 import ticketManager.databaseAccessLayer.ITicketContext;
+import ticketManager.exceptions.TicketDuplicateException;
+
+import java.sql.SQLException;
 
 public class TicketRepository {
     private final ITicketContext context;
@@ -20,7 +23,11 @@ public class TicketRepository {
         return context.getAllValidAfterId(id);
     }
 
-    public TicketModel newTicket(TicketModel ticket) {
-        return context.createTicket(ticket);
+    public TicketModel newTicket(TicketModel ticket) throws TicketDuplicateException {
+        try {
+            return context.createTicket(ticket);
+        } catch (SQLException e) {
+            throw new TicketDuplicateException();
+        }
     }
 }

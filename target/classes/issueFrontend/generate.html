@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" type="text/javascript"></script>
 </head>
 <body>
 <ul class="nav nav-tabs">
@@ -21,11 +23,19 @@
 </ul>
 <br/>
 <div class="form-group">
-    <label for="exampleInputEmail1">Ticket number</label>
-    <input type="email" disabled class="form-control" id="exampleInputEmail1">
+    <label for="input">Ticket number</label>
+    <input type="email" disabled class="form-control" id="input">
     <small id="emailHelp" class="form-text text-muted">Please note this ticket number is unique and should only be issued once</small>
 </div>
 
-<a class="btn btn-primary" href="#" role="button">Generate new ticket</a>
+<a class="btn btn-primary" href="#" id="generateButton" role="button">Generate new ticket</a>
+<br />
+<br />
+<div class="alert alert-warning" id="offline" role="alert">
+    <h4 class="alert-heading">Offline!</h4>
+    <p><span id="total"></span> tickets you've generated are not valid, but don't worry. If we are back online the tickets will be processed</p>
+    <hr>
+    <p class="mb-0">You can keep on generating tickets</p>
+</div>
 </body>
 </html>

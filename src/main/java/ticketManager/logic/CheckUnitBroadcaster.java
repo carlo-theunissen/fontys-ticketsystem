@@ -1,11 +1,13 @@
 package ticketManager.logic;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import model.TicketMutationModel;
 import ticketManager.model.TicketExternalCommunicationModel;
 import ticketManager.model.WebSocketSessionModel;
 
 import java.io.IOException;
+import java.text.DateFormat;
 
 public class CheckUnitBroadcaster  {
     private final IWebSocketSessionStorage sessionStorage;
@@ -15,7 +17,8 @@ public class CheckUnitBroadcaster  {
     }
 
     public void send(TicketMutationModel ticket) {
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder()
+                .setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
         String text = gson.toJson(new TicketExternalCommunicationModel(ticket.getTicket()));
 
         for (WebSocketSessionModel model : sessionStorage.getUnits()){

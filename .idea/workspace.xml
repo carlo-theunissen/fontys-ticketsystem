@@ -5,36 +5,29 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Ticketsystem.iml" afterPath="$PROJECT_DIR$/Ticketsystem.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/issueFrontend/Browser.java" afterPath="$PROJECT_DIR$/src/main/java/issueFrontend/Browser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/issueFrontend/IssueFrontend.java" afterPath="$PROJECT_DIR$/src/main/java/issueFrontend/IssueFrontend.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/TicketModel.java" afterPath="$PROJECT_DIR$/src/main/java/model/TicketModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/WebSocketSessionModel.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/model/WebSocketSessionModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/authentication/SimpleAuthentication.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/authentication/websocket/SimpleAuthenticationGuard.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/communication/FromClientCommunication.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/communication/FromClientCommunication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/communication/IMessageProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/communication/IMessageProcessor.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/DatabaseTicketContext.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/DatabaseTicketContext.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/ITicketContext.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/ITicketContext.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/json/TicketUpdateMessage.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/json/TicketUpdateMessage.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitBroadcaster.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitBroadcaster.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/logic/ITicketIncrease.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/logic/ITicketIncrease.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/logic/IWebSocketSessionStorage.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/logic/IWebSocketSessionStorage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCollectionProvider.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCollectionProvider.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/logic/ITicketGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/logic/ITicketGenerator.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCreator.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCreator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketIncreaseProvider.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketIncreaseProvider.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketRepository.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServer.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/SimpleApiService.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/TicketsApiServices.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/model/TicketExternalCommunicationModel.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/model/TicketExternalCommunicationModel.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/TicketsApiServices.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/TicketsApiServices.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html" afterPath="$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/issueFrontend/Browser.class" afterPath="$PROJECT_DIR$/target/classes/issueFrontend/Browser.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/issueFrontend/generate.html" afterPath="$PROJECT_DIR$/target/classes/issueFrontend/generate.html" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/TicketModel.class" afterPath="$PROJECT_DIR$/target/classes/model/TicketModel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/authentication/SimpleAuthentication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/communication/FromClientCommunication.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/communication/FromClientCommunication.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/databaseAccessLayer/DatabaseTicketContext.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/databaseAccessLayer/DatabaseTicketContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/databaseAccessLayer/ITicketContext.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/databaseAccessLayer/ITicketContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/logic/CheckUnitBroadcaster.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/logic/CheckUnitBroadcaster.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/logic/ITicketIncrease.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/logic/ITicketIncrease.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/logic/TicketIncreaseProvider.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/logic/TicketIncreaseProvider.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/logic/ITicketGenerator.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/logic/ITicketGenerator.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/logic/TicketCreator.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/logic/TicketCreator.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/logic/TicketRepository.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/logic/TicketRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/webserver/EventServer.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/webserver/EventServer.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/webserver/EventServerSocket.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/webserver/EventServerSocket.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/webserver/SimpleApiService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/model/TicketExternalCommunicationModel.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/model/TicketExternalCommunicationModel.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/webserver/TicketsApiServices.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/webserver/TicketsApiServices.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,56 +38,107 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ticketsystem$IssueFrontend.coverage" NAME="IssueFrontend Coverage Results" MODIFIED="1527689053862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>issueFrontend.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ticketsystem$EventServer.coverage" NAME="EventServer Coverage Results" MODIFIED="1527684116457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ticketManager.webserver.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TicketsApiServices.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/TicketsApiServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+            <state relative-caret-position="586">
+              <caret line="90" column="8" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="91" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#1554#1588#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+                <element signature="e#1618#1652#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FromClientCommunication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/communication/FromClientCommunication.java">
+      <file leaf-file-name="WebView.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/scene/web/WebView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="129">
+              <caret line="1041" column="0" lean-forward="false" selection-start-line="1041" selection-start-column="0" selection-end-line="1041" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventServer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServer.java">
+      <file leaf-file-name="ClientTicketCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/ClientTicketCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="31" selection-end-column="57" />
+            <state relative-caret-position="60">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerCommunicationThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/ServerCommunicationThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="85" column="34" lean-forward="false" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#934#947#0" expanded="true" />
+                <element signature="e#2064#2079#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventServerSocket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java">
+      <file leaf-file-name="INetworkStatusUpdate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/INetworkStatusUpdate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="59" />
+            <state relative-caret-position="60">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Browser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/Browser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="28" column="96" lean-forward="true" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackendToJavascriptCommunication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/BackendToJavascriptCommunication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#1773#1774#0" expanded="true" />
-                <element signature="e#1829#1830#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#490#668#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#800#1001#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,8 +147,8 @@
       <file leaf-file-name="TicketCreator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="345">
+              <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -140,20 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/CheckUnitRegister.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/ICheckUnitBroadcast.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/CheckUnitBroadcaster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketLogic/TicketValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketLogic/ITicketGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketLogic/ITicketIncreaser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketLogic/ITicketIncrease.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketLogic/TicketGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketLogic/TicketCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketLogic/TicketIncreaseProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/MutationManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/communication/IToClientCommunication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/communication/fromClientCommunication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/communication/ToClientCommunication.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketMutationModelmutationManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/exceptions/TicketNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/TicketMutationType.java" />
@@ -167,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/JsonMessageModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/ICheckUnitStorage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/json/TicketUpdateMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/authentication/SimpleAuthentication.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/authentication/SimpleAuthenticationGuard.java" />
@@ -180,17 +209,32 @@
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/authentication/rest/BasicUserAuthentication.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/exceptions/UnauthorisedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCollectionProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/TicketModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/model/TicketRestModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/model/TicketExternalCommunicationModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/DatabaseTicketContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/ITicketContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/communication/FromClientCommunication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitBroadcaster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/webserver/TicketsApiServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/CommunicationToServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/TicketCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/ITicketGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/model/TicketExternalCommunicationModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitBroadcaster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/DatabaseTicketContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/ITicketContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/exceptions/TicketDuplicateException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ticketManager/webserver/TicketsApiServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/TicketModel.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/IssueFrontend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/JavascriptToBackendCommunication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/INetwerkStatusUpdate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/INetworkStatusUpdate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/ServerCommunicationThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/ClientTicketCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/Browser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/issueFrontend/BackendToJavascriptCommunication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/issueFrontend/js/script.js" />
       </list>
     </option>
   </component>
@@ -288,7 +332,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="issueFrontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ticketsystem" type="b2602c69:ProjectViewProjectNode" />
@@ -313,6 +357,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ticketsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ticketsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="issueFrontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ticketsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ticketsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="issueFrontend" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,6 +401,9 @@
       <recent name="ticketManager.logic" />
       <recent name="issueFrontend" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ticketManager.exceptions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/ticketManager" />
       <recent name="$PROJECT_DIR$/src/main/resources/issueFrontend" />
@@ -357,7 +421,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EventServer">
+  <component name="RunManager" selected="Application.IssueFrontend">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -482,8 +546,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.EventServer" />
-        <item index="1" class="java.lang.String" itemvalue="Application.IssueFrontend" />
+        <item index="0" class="java.lang.String" itemvalue="Application.IssueFrontend" />
+        <item index="1" class="java.lang.String" itemvalue="Application.EventServer" />
       </list>
     </recent_temporary>
   </component>
@@ -502,16 +566,15 @@
       <updated>1526907122883</updated>
       <workItem from="1526907128759" duration="726000" />
       <workItem from="1526972843199" duration="17578000" />
-      <workItem from="1527159007250" duration="23154000" />
+      <workItem from="1527159007250" duration="33385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41458000" />
+    <option name="totallyTimeSpent" value="51689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1420" height="764" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -523,8 +586,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36271676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36271676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18309858" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -552,114 +616,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/ICheckUnitBroadcast.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/communication/ToClientCommunication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketMutationModelmutationManager.java" />
-    <entry file="file://$PROJECT_DIR$/Ticketsystem.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="2992" column="25" lean-forward="false" selection-start-line="2992" selection-start-column="25" selection-end-line="2992" selection-end-column="25" />
-          <folding>
-            <element signature="e#117893#117894#0" expanded="false" />
-            <element signature="e#117955#117956#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/MutationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#267#268#0" expanded="false" />
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#1453#1454#0" expanded="false" />
-            <element signature="e#1492#1493#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/exceptions/TicketNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#211#212#0" expanded="false" />
-            <element signature="e#271#272#0" expanded="false" />
-            <element signature="e#323#324#0" expanded="false" />
-            <element signature="e#359#360#0" expanded="false" />
-            <element signature="e#399#400#0" expanded="false" />
-            <element signature="e#461#462#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/ITicketGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/communication/IMessageProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/HashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="104" column="25" lean-forward="false" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="25" />
-          <folding>
-            <element signature="e#8033#8034#0" expanded="false" />
-            <element signature="e#8081#8082#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar!/javax/websocket/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="58" column="11" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/model/WebSocketSessionModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -679,18 +640,6 @@
         <state relative-caret-position="75">
           <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/IssueFrontend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="112" lean-forward="false" selection-start-line="12" selection-start-column="112" selection-end-line="12" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#655#656#0" expanded="false" />
-            <element signature="e#683#684#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,14 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/json/TicketUpdateMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -789,10 +730,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding>
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -817,9 +755,9 @@
         <state relative-caret-position="75">
           <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding>
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="false" />
+            <element signature="e#180#181#0" expanded="false" />
+            <element signature="e#212#213#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -872,27 +810,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCollectionProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/authentication/rest/BasicUserAuthentication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#418#419#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -905,83 +830,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/model/TicketExternalCommunicationModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="883" column="16" lean-forward="false" selection-start-line="883" selection-start-column="16" selection-end-line="883" selection-end-column="16" />
           <folding>
-            <element signature="e#37718#37719#0" expanded="true" />
-            <element signature="e#37754#37755#0" expanded="true" />
+            <element signature="e#37718#37719#0" expanded="false" />
+            <element signature="e#37754#37755#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/DatabaseTicketContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="114" column="12" lean-forward="false" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
+        <state relative-caret-position="450">
+          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1929#1942#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#2779#2780#0" expanded="true" />
-            <element signature="e#2834#2835#0" expanded="true" />
-            <element signature="e#2861#2862#0" expanded="true" />
-            <marker date="1527680423000" expanded="true" signature="939:997" ph="UPDATE ticket... " />
-            <marker date="1527680423000" expanded="true" signature="1101:1144" ph="SELECT * FRO... ticket" />
-            <marker date="1527680423000" expanded="true" signature="2080:2113" ph="SELECT * FRO... ticket" />
-            <marker date="1527680423000" expanded="true" signature="3019:3107" ph="INSERT INTO `ticket`... " />
-            <marker date="1527680423000" expanded="true" signature="3671:3720" ph="UPDATE `ticket`... " />
+            <element signature="imports" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#688#689#0" expanded="false" />
+            <element signature="e#1773#1774#0" expanded="false" />
+            <element signature="e#1829#1830#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/TicketModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/ITicketContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="-225">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="31" selection-end-column="57" />
           <folding>
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,47 +873,240 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitBroadcaster.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCollectionProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
+            <element signature="e#446#447#0" expanded="false" />
+            <element signature="e#501#502#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/ITicketGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/model/TicketExternalCommunicationModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/DatabaseTicketContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1256">
+          <caret line="103" column="30" lean-forward="true" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1929#1942#0" expanded="false" />
+            <element signature="e#2751#2752#0" expanded="false" />
+            <element signature="e#2779#2780#0" expanded="false" />
+            <element signature="e#2834#2835#0" expanded="false" />
+            <element signature="e#2861#2862#0" expanded="false" />
+            <marker date="1527683896000" expanded="true" signature="939:997" ph="UPDATE ticket... " />
+            <marker date="1527683896000" expanded="true" signature="1101:1144" ph="SELECT * FRO... ticket" />
+            <marker date="1527683896000" expanded="true" signature="2080:2113" ph="SELECT * FRO... ticket" />
+            <marker date="1527683896000" expanded="true" signature="3019:3121" ph="INSERT INTO `ticket`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/ITicketContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/exceptions/TicketDuplicateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding>
+            <element signature="e#537#538#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#691#692#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitBroadcaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#466#467#0" expanded="false" />
+            <element signature="e#515#516#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/TicketsApiServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        <state relative-caret-position="586">
+          <caret line="90" column="8" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="91" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#1554#1588#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#1618#1652#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/TicketModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="129">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#1304#1305#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
+            <element signature="e#1389#1390#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar!/org/apache/http/impl/client/CloseableHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/IssueFrontend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/scene/web/WebView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="1041" column="0" lean-forward="false" selection-start-line="1041" selection-start-column="0" selection-end-line="1041" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/INetworkStatusUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/ServerCommunicationThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="85" column="34" lean-forward="false" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#934#947#0" expanded="true" />
+            <element signature="e#2064#2079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/JavascriptToBackendCommunication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#282#283#0" expanded="false" />
+            <element signature="e#314#315#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/ClientTicketCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/Browser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="96" lean-forward="true" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/BackendToJavascriptCommunication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="31" selection-end-column="57" />
+          <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#490#668#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#800#1001#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
           </folding>
         </state>
       </provider>

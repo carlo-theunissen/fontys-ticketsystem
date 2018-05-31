@@ -3,6 +3,7 @@ package ticketManager.logic;
 import model.TicketModel;
 import model.TicketMutationModel;
 import ticketManager.databaseAccessLayer.ITicketContext;
+import ticketManager.exceptions.TicketDuplicateException;
 
 public class TicketCreator implements ITicketGenerator {
     private final MutationManager mutationManager;
@@ -17,9 +18,15 @@ public class TicketCreator implements ITicketGenerator {
      * Generates a new ticket, add it to the database and makes sure the mutation manager knows about it
      * @return the ticket number
      */
-    public TicketMutationModel newTicket() {
+    public TicketMutationModel createTicket() throws TicketDuplicateException {
         TicketModel ticket = TicketModel.CreateNowTicketModel();
+        ticket.setRandomId((int) (Math.random() * 1000 + 1));
+        return postTicket(ticket);
+    }
+
+    public TicketMutationModel postTicket(TicketModel ticket) throws TicketDuplicateException {
         ticket = repository.newTicket(ticket);
         return mutationManager.createNewTicketMutation(ticket);
     }
+
 }
