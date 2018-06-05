@@ -1,7 +1,7 @@
 package ticketManager.databaseAccessLayer;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
-import model.TicketModel;
+import global.model.TicketModel;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -43,7 +43,8 @@ public class DatabaseTicketContext implements ITicketContext {
                 if (result.next()) {
                     model.setId(result.getInt("id"));
                     model.setAmountChecked(result.getInt("count"));
-                    model.setDate(result.getDate("created"));
+                    model.setDate(result.getTimestamp("created"));
+                    model.setRandomId(result.getInt("randomId"));
                     return model;
                 }
             }finally {
@@ -64,12 +65,13 @@ public class DatabaseTicketContext implements ITicketContext {
             PreparedStatement select = conn.prepareStatement("SELECT * FROM ticket WHERE id > ?");
             select.setInt(1, id);
             ResultSet found = select.executeQuery();
-            if (found.next()) {
+            while (found.next()) {
                 TicketModel ticket = new TicketModel();
 
                 ticket.setId(found.getInt("id"));
                 ticket.setAmountChecked(found.getInt("count"));
-                ticket.setDate(found.getDate("created"));
+                ticket.setRandomId(found.getInt("randomId"));
+                ticket.setDate(found.getTimestamp("created"));
                 models.add(ticket);
             }
 

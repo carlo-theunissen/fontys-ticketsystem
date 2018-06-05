@@ -1,7 +1,9 @@
 package issueFrontend;
 
+import global.interfaces.INetworkStatusUpdate;
 import javafx.application.Platform;
 import javafx.scene.web.WebEngine;
+import netscape.javascript.JSException;
 
 public class BackendToJavascriptCommunication implements INetworkStatusUpdate {
     private final WebEngine webEngine;
@@ -17,7 +19,9 @@ public class BackendToJavascriptCommunication implements INetworkStatusUpdate {
         Platform.runLater(new Runnable() {
             public void run() {
                 if(isOnline) {
-                    webEngine.executeScript("online()");
+                    try {
+                        webEngine.executeScript("online();");
+                    }catch (JSException ignored){}
                 }
             }
         });
@@ -30,7 +34,9 @@ public class BackendToJavascriptCommunication implements INetworkStatusUpdate {
         Platform.runLater(new Runnable() {
             public void run() {
                 if(!isOnline) {
-                    webEngine.executeScript("offline(" + amountOffline + ")");
+                    try {
+                        webEngine.executeScript("offline(" + amountOffline + ");");
+                    }catch (JSException ignored){}
                 }
             }
         });

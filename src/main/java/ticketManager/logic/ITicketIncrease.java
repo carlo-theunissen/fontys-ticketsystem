@@ -1,6 +1,6 @@
 package ticketManager.logic;
 
-import model.TicketMutationModel;
+import global.model.TicketMutationModel;
 
 public interface ITicketIncrease {
     TicketMutationModel getAndIncrease(String id);

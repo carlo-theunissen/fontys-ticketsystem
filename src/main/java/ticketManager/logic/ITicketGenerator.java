@@ -1,7 +1,7 @@
 package ticketManager.logic;
 
-import model.TicketModel;
-import model.TicketMutationModel;
+import global.model.TicketModel;
+import global.model.TicketMutationModel;
 import ticketManager.exceptions.TicketDuplicateException;
 
 public interface ITicketGenerator {

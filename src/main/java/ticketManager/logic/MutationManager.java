@@ -1,8 +1,8 @@
 package ticketManager.logic;
 
-import model.TicketModel;
-import model.TicketMutationModel;
-import model.TicketMutationType;
+import global.model.TicketModel;
+import global.model.TicketMutationModel;
+import global.model.TicketMutationType;
 
 import java.util.ArrayList;
 

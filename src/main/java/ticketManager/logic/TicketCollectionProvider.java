@@ -1,6 +1,6 @@
 package ticketManager.logic;
 
-import model.TicketModel;
+import global.model.TicketModel;
 
 public class TicketCollectionProvider implements ITicketCollection {
     private final TicketRepository repository;

@@ -1,9 +1,14 @@
 package ticketManager.communication;
 
-import model.TicketMutationModel;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import global.model.TicketExternalCommunicationModel;
+import global.model.TicketMutationModel;
 import ticketManager.model.WebSocketSessionModel;
 import ticketManager.logic.CheckUnitBroadcaster;
 import ticketManager.logic.ITicketIncrease;
+
+import java.text.DateFormat;
 
 
 public class FromClientCommunication implements IMessageProcessor {
@@ -14,11 +19,16 @@ public class FromClientCommunication implements IMessageProcessor {
         this.broadcaster = broadcaster;
     }
 
-    public void onMessage(String ticketNumber, WebSocketSessionModel session) {
-        handleTicketUpdate(ticketNumber);
+    public void onMessage(String message, WebSocketSessionModel session) {
+        Gson gson = new GsonBuilder()
+                .setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+        TicketExternalCommunicationModel communicationModel = gson.fromJson(message, TicketExternalCommunicationModel.class);
+        handleTicketUpdate(communicationModel.getTicketNumber());
     }
     private void handleTicketUpdate(String ticketNumber){
         TicketMutationModel mutation = this.increase.getAndIncrease(ticketNumber);
-        this.broadcaster.send(mutation);
+        if(mutation != null) {
+            this.broadcaster.send(mutation);
+        }
     }
 }

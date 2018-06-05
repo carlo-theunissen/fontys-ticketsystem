@@ -1,6 +1,7 @@
 package issueFrontend;
 
-import model.TicketModel;
+import global.interfaces.INetworkStatusUpdate;
+import global.model.TicketModel;
 
 public class ClientTicketCreator {
     private final ServerCommunicationThread communication;

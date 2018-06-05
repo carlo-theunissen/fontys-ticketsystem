@@ -39,6 +39,7 @@ public class EventServerSocket {
     }
     @OnMessage
     public void onText(String message,Session session) {
+        System.out.println(message);
         WebSocketSessionModel model;
         if(sessionModels.containsKey(session.getId())){
             model = sessionModels.get(session.getId());
@@ -46,6 +47,7 @@ public class EventServerSocket {
             model = getSessionModel(session);
             sessionModels.put(session.getId(), model);
         }
+
 
         processor.onMessage(message, model);
 
@@ -56,7 +58,7 @@ public class EventServerSocket {
 
     @OnClose
     public void onClose(CloseReason reason, Session session) {
-        System.out.println("[Session ID] : " + session.getId() + "[Socket Closed: " + reason);
+        System.out.println("[Session ID] : " + session.getId() + "[Socket Closed: " + reason.getReasonPhrase());
         if(sessionModels.containsKey(session.getId())){
             sessionModels.get(session.getId()).Closed();
             sessionModels.remove(session.getId());

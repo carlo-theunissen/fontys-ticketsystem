@@ -1,6 +1,6 @@
 package ticketManager.databaseAccessLayer;
 
-import model.TicketModel;
+import global.model.TicketModel;
 
 import java.sql.SQLException;
 

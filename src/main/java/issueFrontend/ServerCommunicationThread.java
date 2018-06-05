@@ -2,7 +2,8 @@ package issueFrontend;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import model.TicketModel;
+import global.interfaces.INetworkStatusUpdate;
+import global.model.TicketModel;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -45,6 +46,7 @@ public class ServerCommunicationThread extends Thread{
 
     @Override
     public void run() {
+        super.run();
         while (true){
             System.out.println("Tick");
             try {
@@ -70,7 +72,7 @@ public class ServerCommunicationThread extends Thread{
 
             Gson gson = new GsonBuilder()
                     .setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
-            urlParameters.add(new BasicNameValuePair("model", gson.toJson(model)));
+            urlParameters.add(new BasicNameValuePair("global/model", gson.toJson(model)));
 
 
             post.setEntity(new UrlEncodedFormEntity(urlParameters));

@@ -1,6 +1,6 @@
 package ticketManager.logic;
 
-import model.TicketModel;
+import global.model.TicketModel;
 
 public interface ITicketCollection {
     TicketModel[] getValidTickets(int afterId);

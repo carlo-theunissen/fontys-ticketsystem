@@ -1,6 +1,6 @@
 package ticketManager.logic;
 
-import model.TicketModel;
+import global.model.TicketModel;
 import ticketManager.databaseAccessLayer.ITicketContext;
 import ticketManager.exceptions.TicketDuplicateException;
 

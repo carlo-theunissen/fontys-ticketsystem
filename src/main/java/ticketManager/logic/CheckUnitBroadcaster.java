@@ -2,8 +2,8 @@ package ticketManager.logic;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import model.TicketMutationModel;
-import ticketManager.model.TicketExternalCommunicationModel;
+import global.model.TicketMutationModel;
+import global.model.TicketExternalCommunicationModel;
 import ticketManager.model.WebSocketSessionModel;
 
 import java.io.IOException;

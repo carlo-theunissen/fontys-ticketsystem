@@ -2,15 +2,15 @@ package ticketManager.webserver;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import model.TicketModel;
-import model.TicketMutationModel;
+import global.model.TicketModel;
+import global.model.TicketMutationModel;
 import ticketManager.authentication.rest.BasicUserAuthentication;
 import ticketManager.authentication.rest.IRESTAuthProvider;
 import ticketManager.exceptions.TicketDuplicateException;
 import ticketManager.exceptions.UnauthorisedException;
 import ticketManager.logic.*;
 import ticketManager.model.RESTUserModel;
-import ticketManager.model.TicketExternalCommunicationModel;
+import global.model.TicketExternalCommunicationModel;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
@@ -70,7 +70,7 @@ public class TicketsApiServices {
 
     @POST
     @Path("/new")
-    public Response postNewTicket(@HeaderParam("Authorization") String authString, @FormParam("model") String modelJson) throws UnauthorisedException {
+    public Response postNewTicket(@HeaderParam("Authorization") String authString, @FormParam("global/model") String modelJson) throws UnauthorisedException {
         Gson gson = new GsonBuilder()
                 .setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
         getUserModelOrThrowException(authString); //authentication
