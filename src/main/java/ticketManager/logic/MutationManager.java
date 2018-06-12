@@ -6,7 +6,7 @@ import global.model.TicketMutationType;
 
 import java.util.ArrayList;
 
-public class MutationManager {
+public class MutationManager implements IMutationManager {
     private ArrayList<TicketMutationModel> mutations;
 
     public MutationManager(){

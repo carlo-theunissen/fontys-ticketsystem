@@ -7,6 +7,7 @@ import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainer
 import org.glassfish.jersey.servlet.ServletContainer;
 import ticketManager.authentication.websocket.SimpleAuthenticationGuard;
 import ticketManager.databaseAccessLayer.DatabaseTicketContext;
+import ticketManager.logic.IMutationManager;
 import ticketManager.logic.MutationManager;
 import ticketManager.logic.TicketRepository;
 
@@ -34,12 +35,12 @@ import javax.websocket.server.ServerContainer;
  */
 public class EventServer {
 
-    private static MutationManager mutationManager = new MutationManager();
+    private static IMutationManager IMutationManager = new MutationManager();
     private static TicketRepository repository = new TicketRepository(new DatabaseTicketContext());
     private static SimpleAuthenticationGuard authentication = new SimpleAuthenticationGuard();
 
-    public static MutationManager getMutationManager() {
-        return mutationManager;
+    public static IMutationManager getMutationManager() {
+        return IMutationManager;
     }
 
     public static TicketRepository getRepository() {

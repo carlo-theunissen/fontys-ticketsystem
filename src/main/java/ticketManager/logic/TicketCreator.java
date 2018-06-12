@@ -5,11 +5,11 @@ import global.model.TicketMutationModel;
 import ticketManager.exceptions.TicketDuplicateException;
 
 public class TicketCreator implements ITicketGenerator {
-    private final MutationManager mutationManager;
+    private final IMutationManager IMutationManager;
     private final TicketRepository repository;
 
-    public TicketCreator(MutationManager mutationManager, TicketRepository repository){
-        this.mutationManager = mutationManager;
+    public TicketCreator(IMutationManager IMutationManager, TicketRepository repository){
+        this.IMutationManager = IMutationManager;
         this.repository = repository;
     }
 
@@ -25,7 +25,7 @@ public class TicketCreator implements ITicketGenerator {
 
     public TicketMutationModel postTicket(TicketModel ticket) throws TicketDuplicateException {
         ticket = repository.newTicket(ticket);
-        return mutationManager.createNewTicketMutation(ticket);
+        return IMutationManager.createNewTicketMutation(ticket);
     }
 
 }

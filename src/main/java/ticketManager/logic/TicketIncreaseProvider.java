@@ -4,11 +4,11 @@ import global.model.TicketModel;
 import global.model.TicketMutationModel;
 
 public class TicketIncreaseProvider implements ITicketIncrease {
-    private final MutationManager mutationManager;
+    private final IMutationManager IMutationManager;
     private final TicketRepository ticketRepository;
 
-    public TicketIncreaseProvider(MutationManager mutationManager, TicketRepository context){
-        this.mutationManager = mutationManager;
+    public TicketIncreaseProvider(IMutationManager IMutationManager, TicketRepository context){
+        this.IMutationManager = IMutationManager;
         this.ticketRepository = context;
     }
 
@@ -17,6 +17,6 @@ public class TicketIncreaseProvider implements ITicketIncrease {
         if(model == null){
             return null;
         }
-        return mutationManager.createUpdateTicketMutation(model);
+        return IMutationManager.createUpdateTicketMutation(model);
     }
 }
