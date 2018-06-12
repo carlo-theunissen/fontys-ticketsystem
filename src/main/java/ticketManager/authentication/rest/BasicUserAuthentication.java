@@ -15,14 +15,15 @@ public class BasicUserAuthentication implements IRESTAuthProvider {
     public RESTUserModel getUser(String authString) {
         Pattern pattern = Pattern.compile(REGEX);
         Matcher matcher = pattern.matcher(authString);
-        matcher.find();
-        String auth = matcher.group(1);
-        String parsedAuth = new String(DatatypeConverter.parseBase64Binary(auth));
-        String[] split = parsedAuth.split(":");
-        if(split[1].equals("password")){
-            RESTUserModel model = new RESTUserModel();
-            model.setName(split[0]);
-            return model;
+        if(matcher.find()) {
+            String auth = matcher.group(1);
+            String parsedAuth = new String(DatatypeConverter.parseBase64Binary(auth));
+            String[] split = parsedAuth.split(":");
+            if (split[1].equals("password")) {
+                RESTUserModel model = new RESTUserModel();
+                model.setName(split[0]);
+                return model;
+            }
         }
         return null;
     }

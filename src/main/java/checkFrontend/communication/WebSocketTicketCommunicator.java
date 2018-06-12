@@ -72,7 +72,9 @@ public class WebSocketTicketCommunicator extends Thread implements ITicketCommun
     public synchronized boolean updateTicket(TicketModel ticket) {
         TicketExternalCommunicationModel ticketExternal = new TicketExternalCommunicationModel(ticket);
         try {
-            session.getBasicRemote().sendText(getGson().toJson(ticketExternal));
+            String text = getGson().toJson(ticketExternal);
+            System.out.println("SEND: "+text);
+            session.getBasicRemote().sendText(text);
         } catch (IOException e) {
             return false;
         }

@@ -62,8 +62,9 @@ public class TicketModel {
             bigInt = bigInt.divide( new BigInteger( String.valueOf( multiplier) ));
 
             TicketModel model = new TicketModel();
-            model.setDate( formatter.parse( bigInt.toString().substring(0, formatter.toPattern().length())));
-            model.setRandomId(Integer.parseInt( bigInt.toString().substring(formatter.toPattern().length(), ticketNumber.length() - 1)));
+            String numbers = bigInt.toString().substring(0, formatter.toPattern().length());
+            model.setDate( formatter.parse( numbers));
+            model.setRandomId(Integer.parseInt( bigInt.toString().substring(formatter.toPattern().length(), bigInt.toString().length() -1 )));
             return model;
         } catch (ParseException e) {
             return null;

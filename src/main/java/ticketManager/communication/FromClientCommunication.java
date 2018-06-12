@@ -22,7 +22,9 @@ public class FromClientCommunication implements IMessageProcessor {
     public void onMessage(String message, WebSocketSessionModel session) {
         Gson gson = new GsonBuilder()
                 .setDateFormat(DateFormat.FULL, DateFormat.FULL).create();
+
         TicketExternalCommunicationModel communicationModel = gson.fromJson(message, TicketExternalCommunicationModel.class);
+
         handleTicketUpdate(communicationModel.getTicketNumber());
     }
     private void handleTicketUpdate(String ticketNumber){
