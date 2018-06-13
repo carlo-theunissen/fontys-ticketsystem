@@ -15,27 +15,43 @@
 <body>
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link active" href="generate.html">Generate</a>
+        <a class="nav-link" href="#" id="clickGenerate">Generate</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="stats.html">Stats</a>
+        <a class="nav-link" href="#" id="clickStats">Stats</a>
     </li>
 </ul>
 <br/>
-<div class="form-group">
-    <label for="input">Ticket number</label>
-    <input type="email" disabled class="form-control" id="input">
-    <small id="emailHelp" class="form-text text-muted">Please note this ticket number is unique and should only be issued once</small>
+
+<div id="generateShow">
+    <div class="form-group">
+        <label for="input">Ticket number</label>
+        <input type="email" disabled class="form-control" id="input">
+        <small id="emailHelp" class="form-text text-muted">Please note this ticket number is unique and should only be issued once</small>
+    </div>
+
+    <div id="result"></div>
+
+    <a class="btn btn-primary" href="#" id="generateButton" role="button">Generate new ticket</a>
+    <br />
+    <br />
+    <div class="alert alert-warning" id="offline" role="alert">
+        <h4 class="alert-heading">Offline!</h4>
+        <p><span id="total"></span> tickets you've generated are not valid, but don't worry. If we are back online the tickets will be processed</p>
+        <hr>
+        <p class="mb-0">You can keep on generating tickets</p>
+    </div>
 </div>
 
-<a class="btn btn-primary" href="#" id="generateButton" role="button">Generate new ticket</a>
-<br />
-<br />
-<div class="alert alert-warning" id="offline" role="alert">
-    <h4 class="alert-heading">Offline!</h4>
-    <p><span id="total"></span> tickets you've generated are not valid, but don't worry. If we are back online the tickets will be processed</p>
-    <hr>
-    <p class="mb-0">You can keep on generating tickets</p>
+<div id="statsShow">
+    <h4>13 juni</h4>
+    <table class="table">
+        <tr><td>11:00</td><td>10</td></tr>
+        <tr><td>13:00</td><td>10</td></tr>
+        <tr><td>14:00</td><td>10</td></tr>
+        <tr><td>16:00</td><td>10</td></tr>
+    </table>
+
 </div>
 </body>
 </html>

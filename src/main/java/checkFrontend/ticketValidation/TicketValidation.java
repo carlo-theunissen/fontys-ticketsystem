@@ -19,7 +19,7 @@ public class TicketValidation implements ITicketValidator, INetworkStatusUpdate 
     private final ITicketCommunicator websocketCommunicator;
     private ITicketCommunicator restCommunicator;
     private final INetworkStatusUpdate network;
-
+    private final OfflineTicketValidation offlineValidation;
 
 
     private boolean beenOffline;
@@ -36,6 +36,7 @@ public class TicketValidation implements ITicketValidator, INetworkStatusUpdate 
         this.ticketUpdater.start();
 
         startDump();
+        offlineValidation = new OfflineTicketValidation(websocketCommunicator);
     }
 
     private void startDump(){
@@ -55,26 +56,13 @@ public class TicketValidation implements ITicketValidator, INetworkStatusUpdate 
         if(ticket != null && model.getStatus() == TicketStatus.VALID){
             ticket.setAmountChecked(ticket.getAmountChecked() + 1);
             model.setCount(model.getCount()+1);
-            updateTicket(ticket);
         }
 
         if(model.getStatus() == TicketStatus.INVALID){
-
-            if(ticket == null || ticket.getDate().before(websocketCommunicator.getLastUpdateDate())){
-                model = new TicketResultModel();
-                model.setStatus(TicketStatus.INVALID);
-                return model;
-            }
-
-            long diff = Math.abs( new Date().getTime() - ticket.getDate().getTime() );
-            if(TimeUnit.MINUTES.convert(diff, TimeUnit.MILLISECONDS) > 15){
-                model = new TicketResultModel();
-                model.setStatus(TicketStatus.INVALID);
-                return model;
-            }
-
-            model = new TicketResultModel();
-            model.setStatus(TicketStatus.UNKNOWN);
+            model =  offlineValidation.validate(ticket);
+        }
+        if(model.getStatus() == TicketStatus.VALID){
+            updateTicket(ticket);
         }
 
         return model;
@@ -83,7 +71,6 @@ public class TicketValidation implements ITicketValidator, INetworkStatusUpdate 
     public boolean updateTicket(TicketModel ticket) {
         this.ticketCollection.updateTicket(ticket);
         this.ticketUpdater.updateTicket(ticket);
-
         return true;
     }
 

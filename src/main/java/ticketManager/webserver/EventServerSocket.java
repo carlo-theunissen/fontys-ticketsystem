@@ -38,7 +38,7 @@ public class EventServerSocket {
 
     }
     @OnMessage
-    public void onText(String message,Session session) {
+    public void onText(String message, Session session) {
         System.out.println(message);
         WebSocketSessionModel model;
         if(sessionModels.containsKey(session.getId())){
@@ -47,7 +47,6 @@ public class EventServerSocket {
             model = getSessionModel(session);
             sessionModels.put(session.getId(), model);
         }
-
 
         processor.onMessage(message, model);
 

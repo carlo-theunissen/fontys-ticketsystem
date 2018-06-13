@@ -1,14 +1,10 @@
 package issueFrontend;
 
 import global.Browser;
-import global.JavascriptToBackendCommunication;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
 
 public class IssueFrontend extends Application {
     private Scene scene;

@@ -1,8 +1,7 @@
-package global;
+package issueFrontend;
 
+import issueFrontend.Calculation.GetSalesCalculator;
 import issueFrontend.ClientTicketCreator;
-import netscape.javascript.JSObject;
-
 public class JavascriptToBackendCommunication {
 
     private ClientTicketCreator creator;
@@ -12,5 +11,9 @@ public class JavascriptToBackendCommunication {
 
     public String newTicket(){
         return creator.generateNewTicket().getTicketNumber();
+    }
+    public String getStats(){
+        GetSalesCalculator calculator = new GetSalesCalculator();
+        return calculator.Result();
     }
 }
