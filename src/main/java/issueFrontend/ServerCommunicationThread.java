@@ -40,7 +40,7 @@ public class ServerCommunicationThread extends Thread{
         try {
             processTickets.put(model);
         } catch (InterruptedException ignored) {
-
+            Thread.currentThread().interrupt();
         }
     }
 
@@ -52,7 +52,8 @@ public class ServerCommunicationThread extends Thread{
             try {
                 TicketModel model = processTickets.take();
                 handleTicketSending(model);
-            } catch (InterruptedException e) {
+            } catch (InterruptedException ignored) {
+                Thread.currentThread().interrupt();
                 return;
             }
         }
@@ -103,8 +104,8 @@ public class ServerCommunicationThread extends Thread{
             Thread.sleep(1000);
             System.out.println("Retry " + model.getTicketNumber());
             handleTicketSending(model);
-        } catch (InterruptedException e) {
-
+        } catch (InterruptedException ignored) {
+            Thread.currentThread().interrupt();
         }
     }
 

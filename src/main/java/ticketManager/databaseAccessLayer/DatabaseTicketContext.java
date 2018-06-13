@@ -24,15 +24,17 @@ public class DatabaseTicketContext implements ITicketContext {
 
     public TicketModel increaseAmountAndGetById(String id) {
 
+        PreparedStatement update = null;
+        PreparedStatement select = null;
         try{
             Connection conn = dataSource.getConnection();
             conn.setAutoCommit(false);
 
 
-            PreparedStatement update = conn.prepareStatement("UPDATE ticket SET count = count + 1 WHERE ticketNumber = ?");
+            update = conn.prepareStatement("UPDATE ticket SET count = count + 1 WHERE ticketNumber = ?");
             update.setString(1, id);
 
-            PreparedStatement select = conn.prepareStatement("SELECT * FROM ticket WHERE ticketNumber = ?");
+            select = conn.prepareStatement("SELECT * FROM ticket WHERE ticketNumber = ?");
             select.setString(1, id);
 
             update.execute();
@@ -50,6 +52,8 @@ public class DatabaseTicketContext implements ITicketContext {
             }finally {
                 conn.commit();
                 conn.close();
+                update.close();
+                select.close();
             }
         }catch (SQLException ignored){
             ignored.printStackTrace();
@@ -59,10 +63,11 @@ public class DatabaseTicketContext implements ITicketContext {
 
     public TicketModel[] getAllAfterId(int id) {
         ArrayList<TicketModel> models = new ArrayList<TicketModel>();
+        PreparedStatement select = null;
         try{
             Connection conn = dataSource.getConnection();
 
-            PreparedStatement select = conn.prepareStatement("SELECT * FROM ticket WHERE id > ?");
+            select = conn.prepareStatement("SELECT * FROM ticket WHERE id > ?");
             select.setInt(1, id);
             ResultSet found = select.executeQuery();
             while (found.next()) {
@@ -79,6 +84,14 @@ public class DatabaseTicketContext implements ITicketContext {
 
         }catch (SQLException ignored){
             ignored.printStackTrace();
+        }finally {
+            if(select != null) {
+                try {
+                    select.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         return models.toArray(new TicketModel[models.size()]);
     }

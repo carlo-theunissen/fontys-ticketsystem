@@ -14,13 +14,14 @@ public class TicketModel {
     public int getId() {
         return id;
     }
-    private static SimpleDateFormat formatter = new SimpleDateFormat("yyDDDHHmmss");
+    private static String dataString = "yyDDDHHmmss";
     public String getTicketNumber(){
         //y year
         //D day of year
         //H hour in day
         //m minute in hour
         //s second in minute
+        SimpleDateFormat formatter = new SimpleDateFormat(dataString);
         String multiply = String.valueOf(randomId).substring(0, 1);
         return new BigInteger(formatter.format(date) + String.valueOf(randomId)).multiply(new BigInteger( multiply)).toString() + multiply;
     }
@@ -52,6 +53,7 @@ public class TicketModel {
     }
 
     public static TicketModel ParseByTicketNumber(String ticketNumber){
+        SimpleDateFormat formatter = new SimpleDateFormat(dataString);
 
         try {
             if(ticketNumber.length() < 14){

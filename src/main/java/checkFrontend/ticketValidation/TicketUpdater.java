@@ -21,8 +21,8 @@ public class TicketUpdater extends Thread implements ITicketUpdater{
     public boolean updateTicket(TicketModel ticket) {
         try {
             models.put(ticket);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        } catch (InterruptedException ignored) {
+            Thread.currentThread().interrupt();
             return false;
         }
         return true;
@@ -35,7 +35,8 @@ public class TicketUpdater extends Thread implements ITicketUpdater{
             try {
                 working = false;
                 update( models.take() );
-            } catch (InterruptedException e) {
+            } catch (InterruptedException ignored) {
+                Thread.currentThread().interrupt();
                 return;
             }
         }

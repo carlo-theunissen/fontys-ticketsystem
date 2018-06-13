@@ -42,6 +42,7 @@ public class RestTicketCommunicator extends Thread implements ITicketCommunicato
             get.setHeader("Authorization", "Basic Y2FybG86cGFzc3dvcmQ=");
 
             CloseableHttpResponse response = null;
+            BufferedReader rd = null;
             try {
                 response = httpClient.execute(get);
                 System.out.println("\nSending 'POST' request to URL : " + url);
@@ -49,7 +50,7 @@ public class RestTicketCommunicator extends Thread implements ITicketCommunicato
                         response.getStatusLine().getStatusCode());
 
 
-                BufferedReader rd;
+
                 rd = new BufferedReader(
                         new InputStreamReader(response.getEntity().getContent()));
 
@@ -69,8 +70,15 @@ public class RestTicketCommunicator extends Thread implements ITicketCommunicato
                 this.network.offline(0);
                 try {
                     Thread.sleep(1000);
-                } catch (InterruptedException e1) {
+                } catch (InterruptedException ignored) {
+                    Thread.currentThread().interrupt();
                     return;
+                }
+            } finally {
+                if(rd != null){
+                    try {
+                        rd.close();
+                    } catch (IOException ignored) {}
                 }
             }
         }

@@ -27,5 +27,4 @@ public class TicketCreator implements ITicketGenerator {
         ticket = repository.newTicket(ticket);
         return IMutationManager.createNewTicketMutation(ticket);
     }
-
 }

@@ -47,7 +47,8 @@ public class WebSocketTicketCommunicator extends Thread implements ITicketCommun
 
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException e) {
+            } catch (InterruptedException ignored) {
+                Thread.currentThread().interrupt();
                 return;
             }
             System.out.println("retry");
@@ -75,7 +76,7 @@ public class WebSocketTicketCommunicator extends Thread implements ITicketCommun
             String text = getGson().toJson(ticketExternal);
             System.out.println("SEND: "+text);
             session.getBasicRemote().sendText(text);
-        } catch (IOException e) {
+        } catch (IOException ignored) {
             return false;
         }
         return true;
