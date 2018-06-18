@@ -3,31 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="973a1990-fa9c-43f7-bf75-9d4baf8aba21" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/checkFrontend/communication/RestTicketCommunicator.java" afterPath="$PROJECT_DIR$/src/main/java/checkFrontend/communication/RestTicketCommunicator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/checkFrontend/CheckFrontend.java" afterPath="$PROJECT_DIR$/src/main/java/checkFrontend/CheckFrontend.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/TicketValidation.java" afterPath="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/TicketValidation.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/global/JavascriptToBackendCommunication.java" afterPath="$PROJECT_DIR$/src/main/java/issueFrontend/JavascriptToBackendCommunication.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/ValidTicketCollection.java" afterPath="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/ValidTicketCollection.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/global/Browser.java" afterPath="$PROJECT_DIR$/src/main/java/global/Browser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/issueFrontend/BackendToJavascriptCommunication.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/issueFrontend/IssueFrontend.java" afterPath="$PROJECT_DIR$/src/main/java/issueFrontend/IssueFrontend.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java" afterPath="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/checkFrontend/generate.html" afterPath="$PROJECT_DIR$/src/main/resources/checkFrontend/generate.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/checkFrontend/js/script.js" afterPath="$PROJECT_DIR$/src/main/resources/checkFrontend/js/script.js" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/issueFrontend/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/main/resources/issueFrontend/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html" afterPath="$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/issueFrontend/js/script.js" afterPath="$PROJECT_DIR$/src/main/resources/issueFrontend/js/script.js" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TicketIncreaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/TicketIncreaseTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkFrontend/communication/RestTicketCommunicator.class" afterPath="$PROJECT_DIR$/target/classes/checkFrontend/communication/RestTicketCommunicator.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkFrontend/communication/WebSocketTicketCommunicator$EventClientSocket.class" afterPath="$PROJECT_DIR$/target/classes/checkFrontend/communication/WebSocketTicketCommunicator$EventClientSocket.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkFrontend/communication/WebSocketTicketCommunicator.class" afterPath="$PROJECT_DIR$/target/classes/checkFrontend/communication/WebSocketTicketCommunicator.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkFrontend/generate.html" afterPath="$PROJECT_DIR$/target/classes/checkFrontend/generate.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkFrontend/ticketValidation/TicketUpdater.class" afterPath="$PROJECT_DIR$/target/classes/checkFrontend/ticketValidation/TicketUpdater.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/checkFrontend/ticketValidation/TicketValidation.class" afterPath="$PROJECT_DIR$/target/classes/checkFrontend/ticketValidation/TicketValidation.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/global/JavascriptToBackendCommunication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/global/model/TicketModel.class" afterPath="$PROJECT_DIR$/target/classes/global/model/TicketModel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/issueFrontend/IssueFrontend.class" afterPath="$PROJECT_DIR$/target/classes/issueFrontend/IssueFrontend.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/issueFrontend/ServerCommunicationThread.class" afterPath="$PROJECT_DIR$/target/classes/issueFrontend/ServerCommunicationThread.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/issueFrontend/generate.html" afterPath="$PROJECT_DIR$/target/classes/issueFrontend/generate.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/issueFrontend/js/script.js" afterPath="$PROJECT_DIR$/target/classes/issueFrontend/js/script.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/databaseAccessLayer/DatabaseTicketContext.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/databaseAccessLayer/DatabaseTicketContext.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ticketManager/webserver/EventServerSocket.class" afterPath="$PROJECT_DIR$/target/classes/ticketManager/webserver/EventServerSocket.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TicketIncreaseTest.class" afterPath="$PROJECT_DIR$/target/test-classes/TicketIncreaseTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,11 +37,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="BackendToJavascriptCommunication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/BackendToJavascriptCommunication.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/global/BackendToJavascriptCommunication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="37" column="80" lean-forward="false" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
+            <state relative-caret-position="60">
+              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackendToJavascriptCommunication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/BackendToJavascriptCommunication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="7" column="124" lean-forward="false" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#496#714#0" expanded="true" />
+                <element signature="e#713#714#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,89 +66,62 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/checkFrontend/generate.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stats.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/stats.html">
+      <file leaf-file-name="CheckFrontend.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/CheckFrontend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/checkFrontend/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetSalesCalculator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/Calculation/GetSalesCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-539">
-              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="105">
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
-                <element signature="e#623#636#0" expanded="true" />
-                <element signature="e#1523#1540#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HourAmountModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/Calculation/HourAmountModel.java">
+      <file leaf-file-name="TicketValidation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/TicketValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
               <folding>
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
-                <element signature="e#317#318#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#1056#1057#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckUnitBroadcaster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitBroadcaster.java">
+      <file leaf-file-name="ICheckCommunication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/interfaces/ICheckCommunication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="92" />
+            <state relative-caret-position="60">
+              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicketResultModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/TicketResultModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Browser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/global/Browser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -213,23 +186,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitRegister.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/CheckUnitBroadcaster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/interfaces/ITicketUpdater.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/TicketExternalCommunicationModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/global/interfaces/INetworkStatusUpdate.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/TicketModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/ITicketCollection.java" />
         <option value="$PROJECT_DIR$/src/main/java/checkFrontend/IssueFrontend.java" />
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/ClientTicketCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/ValidTicketCollection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/BackendToJavascriptCommunication.java" />
         <option value="$PROJECT_DIR$/src/main/java/checkFrontend/JavascriptToBackendCommunication.java" />
         <option value="$PROJECT_DIR$/src/main/java/global/model/TicketExternalCommunicationModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/BackendToJavascriptCommunication.java" />
         <option value="$PROJECT_DIR$/src/main/java/checkFrontend/Browser.java" />
         <option value="$PROJECT_DIR$/src/main/java/global/Browser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/CheckFrontend.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/logic/TicketIncreaseProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/Browser.java" />
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/IssueFrontend.java" />
@@ -247,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/ServerCommunicationThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/databaseAccessLayer/DatabaseTicketContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/OfflineTicketValidation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/TicketValidation.java" />
         <option value="$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServerSocket.java" />
         <option value="$PROJECT_DIR$/src/test/java/TicketIncreaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/global/JavascriptToBackendCommunication.java" />
@@ -257,13 +223,20 @@
         <option value="$PROJECT_DIR$/src/main/java/global/RestHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/checkFrontend/communication/RestTicketCommunicator.java" />
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/JavascriptToBackendCommunication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/checkFrontend/js/script.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/checkFrontend/generate.html" />
         <option value="$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html" />
         <option value="$PROJECT_DIR$/src/main/resources/issueFrontend/js/script.js" />
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/Calculation/MonthHourAmountModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/Calculation/HourAmountModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/issueFrontend/Calculation/GetSalesCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/checkFrontend/generate.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/checkFrontend/js/script.js" />
+        <option value="$PROJECT_DIR$/src/main/java/global/BackendToJavascriptCommunication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/interfaces/ICheckCommunication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/BackendToJavascriptCommunication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/ValidTicketCollection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/NotifyWhenCollectionChanged.java" />
+        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/TicketValidation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/checkFrontend/CheckFrontend.java" />
       </list>
     </option>
   </component>
@@ -287,7 +260,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
+    <option name="x" value="20" />
     <option name="y" value="68" />
     <option name="width" value="1420" />
     <option name="height" value="764" />
@@ -329,8 +302,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,7 +337,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="issueFrontend" type="462c0819:PsiDirectoryNode" />
+              <item name="checkFrontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ticketsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ticketsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ticketsystem" type="b2602c69:ProjectViewProjectNode" />
@@ -371,7 +354,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="issueFrontend" type="462c0819:PsiDirectoryNode" />
-              <item name="Calculation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ticketsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ticketsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ticketManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ticketsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ticketsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ticketsystem" type="b2602c69:ProjectViewProjectNode" />
@@ -383,8 +380,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,7 +430,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IssueFrontend">
+  <component name="RunManager" selected="Application.CheckFrontend">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -641,9 +636,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.IssueFrontend" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CheckFrontend" />
         <item index="1" class="java.lang.String" itemvalue="Application.EventServer" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CheckFrontend" />
+        <item index="2" class="java.lang.String" itemvalue="Application.IssueFrontend" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.TicketIncreaseTest.basicTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.All in Ticketsystem" />
       </list>
@@ -670,7 +665,8 @@
       <workItem from="1528042389982" duration="2239000" />
       <workItem from="1528044750112" duration="8201000" />
       <workItem from="1528193358388" duration="9577000" />
-      <workItem from="1528802388706" duration="15708000" />
+      <workItem from="1528802388706" duration="16163000" />
+      <workItem from="1529312159063" duration="1448000" />
     </task>
     <servers />
   </component>
@@ -707,42 +703,42 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100660000" />
+    <option name="totallyTimeSpent" value="102563000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="68" width="1420" height="764" extended-state="0" />
+    <frame x="20" y="68" width="1420" height="764" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39884394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32658958" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36271676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20492958" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32658958" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32803467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39884394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20492958" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32803467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,43 +754,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="1950" column="44" lean-forward="false" selection-start-line="1950" selection-start-column="19" selection-end-line="1950" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/PlatformImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/global/Browser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#537#538#0" expanded="false" />
-            <element signature="e#579#580#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/global/model/TicketExternalCommunicationModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#1250#1251#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/websocket-common/9.2.7.v20150116/websocket-common-9.2.7.v20150116.jar!/org/eclipse/jetty/websocket/common/events/annotated/CallableMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -806,19 +765,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/Browser.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/TicketResultModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/TicketStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -831,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,17 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,19 +820,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/interfaces/ITicketValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TicketModelTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,37 +839,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/ValidTicketCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/communication/WebSocketTicketCommunicator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-24">
           <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/CheckFrontend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="71" lean-forward="true" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/TicketValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -955,21 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/JavascriptToBackendCommunication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ticketManager/webserver/EventServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="77" column="40" lean-forward="true" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="68" lean-forward="false" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,16 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
           <caret line="123" column="21" lean-forward="true" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
-          <folding>
-            <element signature="e#3258#3259#0" expanded="true" />
-            <element signature="e#3286#3287#0" expanded="true" />
-            <element signature="e#3341#3342#0" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
-            <marker date="1528875715000" expanded="true" signature="1010:1068" ph="UPDATE ticket... " />
-            <marker date="1528875715000" expanded="true" signature="1154:1197" ph="SELECT * FRO... ticket" />
-            <marker date="1528875715000" expanded="true" signature="2291:2324" ph="SELECT * FRO... ticket" />
-            <marker date="1528875715000" expanded="true" signature="3526:3628" ph="INSERT INTO `ticket`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,9 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,9 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,7 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,30 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/BackendToJavascriptCommunication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="37" column="80" lean-forward="false" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/checkFrontend/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/checkFrontend/generate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/stats.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1150,7 +991,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/generate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="795">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
@@ -1158,21 +999,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/issueFrontend/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="540">
           <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/JavascriptToBackendCommunication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1186,7 +1015,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/Calculation/HourAmountModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="165">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#165#166#0" expanded="true" />
@@ -1203,11 +1032,150 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/Calculation/GetSalesCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-539">
+        <state relative-caret-position="15">
           <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="e#623#636#0" expanded="true" />
             <element signature="e#1523#1540#0" expanded="true" />
+            <element signature="e#2003#2036#0" expanded="true" />
+            <element signature="e#2386#2399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/checkFrontend/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/global/Browser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/JavascriptToBackendCommunication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/TicketResultModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/issueFrontend/JavascriptToBackendCommunication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/checkFrontend/generate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/global/BackendToJavascriptCommunication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/interfaces/ICheckCommunication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/BackendToJavascriptCommunication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="7" column="124" lean-forward="false" selection-start-line="7" selection-start-column="124" selection-end-line="7" selection-end-column="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#496#714#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/interfaces/ITicketValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/ValidTicketCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="50" column="35" lean-forward="false" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding>
+            <element signature="e#1604#1605#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/NotifyWhenCollectionChanged.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/ticketValidation/TicketValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkFrontend/CheckFrontend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

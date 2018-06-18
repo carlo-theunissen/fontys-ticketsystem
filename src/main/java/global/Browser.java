@@ -1,7 +1,5 @@
 package global;
 
-import checkFrontend.ticketValidation.TicketValidation;
-import issueFrontend.BackendToJavascriptCommunication;
 import javafx.geometry.HPos;
 import javafx.geometry.VPos;
 import javafx.scene.layout.Region;

@@ -1,5 +1,6 @@
 package issueFrontend;
 
+import global.BackendToJavascriptCommunication;
 import global.Browser;
 import javafx.application.Application;
 import javafx.scene.Scene;

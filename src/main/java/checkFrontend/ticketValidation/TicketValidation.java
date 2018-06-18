@@ -1,32 +1,34 @@
 package checkFrontend.ticketValidation;
 
+import checkFrontend.NotifyWhenCollectionChanged;
 import checkFrontend.TicketResultModel;
 import checkFrontend.TicketStatus;
 import checkFrontend.communication.RestTicketCommunicator;
 import checkFrontend.communication.WebSocketTicketCommunicator;
+import checkFrontend.interfaces.ICheckCommunication;
 import checkFrontend.interfaces.ITicketCommunicator;
-import checkFrontend.interfaces.ITicketUpdater;
 import checkFrontend.interfaces.ITicketValidator;
 import global.interfaces.INetworkStatusUpdate;
 import global.model.TicketModel;
 
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-
 public class TicketValidation implements ITicketValidator, INetworkStatusUpdate {
-    private final ITicketValidator ticketCollection;
+    private final ValidTicketCollection ticketCollection;
     private  TicketUpdater ticketUpdater;
     private final ITicketCommunicator websocketCommunicator;
     private ITicketCommunicator restCommunicator;
-    private final INetworkStatusUpdate network;
+    private final ICheckCommunication network;
     private final OfflineTicketValidation offlineValidation;
-
 
     private boolean beenOffline;
 
-    public TicketValidation(INetworkStatusUpdate network) {
+    public ValidTicketCollection getTicketCollection() {
+        return ticketCollection;
+    }
+
+    public TicketValidation(ICheckCommunication network) {
         this.network = network;
         this.ticketCollection = new ValidTicketCollection();
+
 
         WebSocketTicketCommunicator communicator = new WebSocketTicketCommunicator(this.ticketCollection, this);
         this.websocketCommunicator = communicator;
@@ -38,6 +40,8 @@ public class TicketValidation implements ITicketValidator, INetworkStatusUpdate 
         startDump();
         offlineValidation = new OfflineTicketValidation(websocketCommunicator);
     }
+
+
 
     private void startDump(){
         RestTicketCommunicator rest = new RestTicketCommunicator(this.ticketCollection, this);
@@ -87,4 +91,5 @@ public class TicketValidation implements ITicketValidator, INetworkStatusUpdate 
         network.offline(this.ticketUpdater == null ? 0: this.ticketUpdater.getQueueLength());
         beenOffline = true;
     }
+
 }

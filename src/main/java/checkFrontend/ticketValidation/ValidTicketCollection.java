@@ -6,9 +6,10 @@ import checkFrontend.interfaces.ITicketValidator;
 import global.model.TicketModel;
 
 import java.util.Map;
+import java.util.Observable;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class ValidTicketCollection implements ITicketValidator {
+public class ValidTicketCollection extends Observable implements ITicketValidator {
     /**
      * guarded by this.validTickets itself
      */
@@ -40,6 +41,13 @@ public class ValidTicketCollection implements ITicketValidator {
                 validTickets.put(ticket.getTicketNumber(), Math.max(ticket.getAmountChecked(), temp));
             }
         }
+        //do these lines after the synchronized block to prevent a deadlock
+        setChanged();
+        notifyObservers();
         return true;
+    }
+
+    public int getTotalTickets(){
+        return validTickets.size();
     }
 }

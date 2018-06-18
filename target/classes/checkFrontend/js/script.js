@@ -49,3 +49,6 @@ function info() {
     document.getElementById("danger").style.display = "none";
     document.getElementById("valid").style.display = "none";
 }
+function ticketAvailable(count) {
+    document.getElementById("totalTicketsAvailable").innerText = count + " tickets available";
+}

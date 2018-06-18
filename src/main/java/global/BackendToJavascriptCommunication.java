@@ -1,4 +1,4 @@
-package issueFrontend;
+package global;
 
 import global.interfaces.INetworkStatusUpdate;
 import javafx.application.Platform;
@@ -6,7 +6,7 @@ import javafx.scene.web.WebEngine;
 import netscape.javascript.JSException;
 
 public class BackendToJavascriptCommunication implements INetworkStatusUpdate {
-    private final WebEngine webEngine;
+    protected final WebEngine webEngine;
     private volatile boolean isOnline = true;
     private volatile int amountOffline;
     public BackendToJavascriptCommunication(WebEngine webEngine) {
